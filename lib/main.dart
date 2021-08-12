@@ -20,7 +20,8 @@ class MyApp extends StatelessWidget {
         fontFamily: GoogleFonts.lato().fontFamily,
       ),
       darkTheme: ThemeData(brightness: Brightness.dark),
-      initialRoute: "/login",
+      debugShowCheckedModeBanner: false,
+      initialRoute: MyRoutes.homeRoute,
       routes: {
         MyRoutes.homeRoute: (context) => HomePage(),
         MyRoutes.loginRoute: (context) => LoginPage(),
